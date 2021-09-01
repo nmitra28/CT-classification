@@ -20,38 +20,46 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Nistha Mitra</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                <span class="d-none d-lg-block"><img src="assets/img/oci.gif" width="200" height="100"/></span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Introduction">Introduction</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#SettingUp">Setting Up</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#CondaEnvironments">Conda Environments</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#UseCases">Use Cases</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#DeployingMLModel">Deploying ML Model</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Authors">Authors</a></li>
                 </ul>
             </div>
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
+            <!-- Introduction-->
+            <section class="tutorial-section" id="Introduction">
+                <div class="tutorial-section-content">
                     <h1 class="mb-0">
                         OCI Data Science 
                         <span class="text-primary">Tutorial</span>
                     </h1>
                     <div class="subheading mb-5">
-                        8400 Boteler Ln· College Park, MD 20740 · (240) 610-7127 ·
+                        with Use Cases
                         <a href="mailto:khan993@umd.edu">khan993@umd.edu</a>
                     </div>
-                    <p class="lead mb-5">I believe that being a ‘Jack of all Trades’ is essential in today’s fast-growing and highly integrated tech industry. As an undergraduate, I want to keep exploring the technological spectrum, learn new things and not limit myself to one domain. Thus, I don’t mind being called a ‘Jack of all Trades’.</p>
-                    <p class="lead mb-5">Fun fact: The complete ‘Jack of All Trades’ saying was originally “A jack of all trades is a master of none, but oftentimes better than a master of one.” I am versatile and I am curious about the many interesting domains of technology and thus, I strive to understand services more holistically.</p>
-                    <p class="lead mb-5">I enjoy Mobile and Web Application Development. I enjoy learning about UI/UX development. I notice how UI/UX is a lot human psychology and that is why being empathetic helps you garner a better experience for the user.
-                            I enjoy low level coding (currently playing with LinkedList in Assembly languages).
-                            I enjoy learning about the power of cloud computing and about the many changes this industry is witnessing. I enjoy learning about cyber security and how hackers exploit the slightest of vulnerabilities to their advantage. Finally, all these data driven problems lead me to explore the power of data science and machine learning.</p>
+                    <p class="lead mb-5">OCI’s data science cloud platform is built for teams allowing them to rapidly build, train, deploy, and manage machine learning models.</br>
+                        In this tutorial, we will walk you through the procedure of building and deploying your Machine Learning model. 
+                        We will cover the entire pipeline of using OCI and specifically cover the following steps: <br></br>
+                        <span style="margin-left: 80px; margin-right: 10px"> 1. Setting Up (VCN, Project, Jupyter Lab notebook Session)</span><br>
+                        <span style="margin-left: 80px; margin-right: 10px"> 2. Understanding and Using Conda Environment and Environment Explorer</span><br>
+                        <span style="margin-left: 80px; margin-right: 10px"> 3. Use-Cases:</span><br>
+                        <span style="margin-left: 150px; margin-right: 10px"> a. Getting Data from Object Storage </span><br>
+                        <span style="margin-left: 150px; margin-right: 10px"> b. EDA and others using ADS </span><br>
+                        <span style="margin-left: 150px; margin-right: 10px"> c. ML model train, test, implementation using AutoML </span><br>
+                        <span style="margin-left: 150px; margin-right: 10px"> d. Saving model to Model Catalog </span><br>
+                        <span style="margin-left: 150px; margin-right: 10px"> e. Deploying ML model as a CLI, REST API on OCI </span><br>
+                                  
+                    </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/ibrahim-khan-632b2714a" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/ibrahimkkhan" target="_blank"><i class="fab fa-github"></i></a>
@@ -59,22 +67,22 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
+            <!-- Setting Up-->
+            <section class="tutorial-section" id="SettingUp">
+                <div class="tutorial-section-content">
+                    <h2 class="mb-5">Setting Up</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Intern</h3>
-                            <div class="subheading mb-3">ARAMCO</div>
+                            <h3 class="mb-0">Prerequisite Setup</h3>
+                            <div class="subheading mb-3">(Compartment and VCN)</div>
                             <p></p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2021 - Present</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Undergraduate Research Assistant</h3>
-                            <div class="subheading mb-3">University of Maryland</div>
+                            <h3 class="mb-0">Start w/ Data Science Platform</h3>
+                            <div class="subheading mb-3">(Create Project and Notebook session)</div>
                             <ul>
                                 <li>Defined a service that uses the popular 2 Phase commit (2PC) Database Concurrency Control Protocol </li>
                                 <li>Designed a stub implementation as well as service tester for testing applications and implementations</li>
@@ -83,41 +91,13 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">June 2021 - Present</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Software Intern</h3>
-                            <div class="subheading mb-3">Clark School of Engineering</div>
-                            <ul>
-                                <li>Productionized a Node.js web app to enable real-time interaction with 4 laboratory equipments</li>
-                                <li>Refined and documented APIs for faster development with incoming interns (saved ~8 hours/member)</li>
-                                <li>Initiated the Scrum Agile Methodology to organize, iterate and improve software functionalities</li>
-                                <li>Streamlined real-time communication between the web client & Azure’s IoT Hub (Response time 0.92s)</li>
-                                <li>Implemented Secure Multi-factor Authentication with Node.js using the University of Maryland’s CAS client & third-party authentication using Google SDK to reduce user onboarding time</li>
-                                <li>Developed & designed responsive User Interface using the grid methodology in HTML5 & CSS3</li>
-                                <li>Deployed the production environment on Heroku cloud and maintained user sessions with MongoDB</li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2020 - September 2020</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Technology Intern</h3>
-                            <div class="subheading mb-3">National Skill Development Center (NSDC)</div>
-                            <ul><li>Data analysis and visualization of employment rate, literacy rate and dropout rate for each state.</li>
-                                <li>Core data provided by the National Commission on Statistics</li>
-                                <li>Led presentations focused on familiarizing High School dropouts about employment opportunities in the Electronics Sector</li>
-                                <li>Initiated and established an online service platform for educating aspiring candidates</li>
-                            </ul>
-                            
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">January 2019 - June 2020</span></div>
-                    </div>
+                    
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
+            <!-- Conda Environments-->
+            <section class="tutorial-section" id="CondaEnvironments">
+                <div class="tutorial-section-content">
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -138,8 +118,8 @@
             </section>
             <hr class="m-0" />
             <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
+            <section class="tutorial-section" id="skills">
+                <div class="tutorial-section-content">
                     <h2 class="mb-5">Skills</h2>
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
@@ -174,8 +154,8 @@
             </section>
             <hr class="m-0" />
             <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
+            <section class="tutorial-section" id="interests">
+                <div class="tutorial-section-content">
                     <h2 class="mb-5">Personal Projects</h2>
                     <h3 class="mb-0">Crushly</h3>
                     <h3 class="mb-0">Swipe&Invest</h3>
@@ -186,8 +166,8 @@
             </section>
             <hr class="m-0" />
             <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
+            <section class="tutorial-section" id="awards">
+                <div class="tutorial-section-content">
                     <h2 class="mb-5">Awards & Certifications</h2>
                     <ul class="fa-ul mb-0">
                         <li>
