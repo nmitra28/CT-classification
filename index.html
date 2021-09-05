@@ -75,21 +75,54 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Prerequisite Setup</h3>
                             <div class="subheading mb-3">(Compartment and VCN)</div>
-                            <p>-------Fill in content----------</p>
+                            <p> <b>1. Compartment</b> <br>
+
+                                This tutorial has two use cases using multiple OCI services (Data Science Platform, ADS, AutoML etc). We assume that you are in a Region with all of the needed services required. 
+                                This project was written in the US East (Ashburn) region.
+                                It also assumes that you've already defined a compartment (see how to do that 
+                                <b><a href="https://oracle-base.com/articles/vm/oracle-cloud-infrastructure-oci-create-a-compartment" target="_blank">here</a></b>) 
+                                and your compartment has access to the services.
+                                <br>
+                                <br>
+                                <b>2. Virtual Cloud Network (VCN) </b><br>
+                                
+                                In order to create any Data Science Project and Jupyter Notebook in OCI, one needs to create a Virtual Cloud Network where the notebook is available. 
+                                
+                                For this tutorial, we used a VCN wizard to create the needed network. To make it easier to set up a VCN, OCI provides a wizard to do that for you. 
+                                You can check how to create a VCN using the wizard <b><a href="https://docs.oracle.com/en/solutions/wls-on-prem-to-oci/use-wizard-create-vcn.html#GUID-5132DD02-EB7C-47FC-B6EF-5838E99EDA0C" target="_blank">here</a></b>).
+                                <br>
+                            </p>
                         </div>
-                        <div class="flex-shrink-0">
+                        <!-- <div class="flex-shrink-0">
                             <span class="text-primary">Add pictures</span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Start w/ Data Science Platform</h3>
                             <div class="subheading mb-3">(Create Project and Notebook session)</div>
-                            <ul>
-                                <li>Create Project</li>
-                                <li>Notebook Session</li>
-                                <li>Anything else you can remember</li>
-                            </ul>
+                            <p><b>1. Create a Project</b><br>
+                                In the Data Science Platform, first you would need to create a Project. Below we have provided the steps to do that. <br><br>
+                                a. Log into the Oracle Cloud.<br>
+                                b. Use the top-left menu to select the "Analytics & AI > Data Science" option or search up “Data Science” <br>
+                                c. Select the compartment of interest and click the “Create Project” sign. <br>
+                                d. Fill in the name, details and/or tag the project, click Create. Now you have made your project.<br>
+                                <img style="border:2px solid black;" src="assets/img/Create_Project.png" alt="Create a Project ss" width="600" height="300" class="center"><br><br>
+                             
+
+
+                                <b>2. Make your Notebook Session</b> <br>
+                                Now that you have created your Project, you can create multiple notebook sessions.<br> <br> 
+
+                                a. Inside the project, you can make multiple notebook sessions with user-specified names, compute instances and block storage space. 
+                                    Here, you would need the <b>VCN and subnet</b> you wish to create your session in. If you used the VCN Wizard earlier, your private 
+                                    subnet has been created for you to use. <br>
+                                    <img style="border:2px solid black;" src="assets/img/create_nbsession.png" alt="Create a Project ss" width="600" height="300" class="center" ><br><br>
+
+                                b. Wait for your notebook session to create. select the "{notebook session} > open" option.<br>
+                                Now you have successfully created a notebook session.
+                                <img style="border:2px solid black;" src="assets/img/notebook_created.png" alt="Create a Project ss" width="600" height="300" class="center"><br><br>
+                            </p>
                         </div>
                         <div class="flex-shrink-0">
                             <span class="text-primary">Add pictures</span>
@@ -107,7 +140,20 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Choose the right Environment</h3>
                             <div class="subheading mb-3">Environment Explorer and Adding environment using Terminal</div>
-                            <p>------Add content-----</p>
+                            <p>The Data Science service offers a series of prebuilt conda environments, and you can access them in 
+                                the JupyterLab Launcher tab by clicking Environment Explorer to open in a new tab. It allows you to:
+                                <ul>
+                                    <li>Browse existing conda environments.</li>
+                                    <li>Search conda environments</li>
+                                    <li>Install prebuilt conda environments in your notebook session using the provided instructions.</li>
+                                    <li>When a conda is installed, you can clone it. You can also look at the multiple notebooks examples for each environment installed.</li>
+                                </ul>
+
+                                The environments are focused on providing specific tools and a framework (for example, PySpark) to do 
+                                machine learning work (for example, General Machine Learning for GPUs). Or providing a comprehensive environment to 
+                                solve business use cases.
+                                For example, for our Fraud Detection use case we used <b>General Machine Learning for CPUs</b>.
+                                </p>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
