@@ -281,7 +281,34 @@
                         <h2 class="mb-5">Deploying your Model</h2>
                         <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                             <div class="flex-grow-1">
-                                <p> After preparing and saving your model artifacts in the model catalog, you should be able to deploy it in the OCI Console. Below we have shown the steps to deploy your saved model (see use case notebook to see how) as a HTTP endpoint or using OCI CLI.<br>
+                                <p> After preparing and saving your model artifacts in the model catalog, you should be able to deploy it in the OCI Console. 
+                                    Below we have shown the steps to deploy your saved model (see use case notebook to see how) as a HTTP endpoint or using OCI CLI.<br><br>
+
+                                    a. Sign in to the OCI console and open the hamburger menu. Next select Data Science, which should be under the Analytics and AI tab.<br><br>
+                                    <img style="border:2px solid black;" src="assets/img/deploy_a1.png" alt="pic" width="500" height="300" >
+                                <img style="border:2px solid black;" src="assets/img/deploy_a2.png" alt="pic" width="500" height="300" > <br> 
+                                <br>
+                                    b. In your data science platform select the project you have been working on. In the project page select Models, you should see your saved model.<br>
+                                    <br><img style="border:2px solid black;" src="assets/img/deploy_b.png" alt="pic" width="600" height="300" class="center"><br><br>
+
+                                    c. Go back and select Model Deployments to deploy your saved model.<br>
+                                    <br><img style="border:2px solid black;" src="assets/img/deploy_c.png" alt="pic" width="600" height="300" class="center"><br><br>
+                                    d. Click “Create Model Deployment”. This should bring up a menu as shown below. Select your model, and compute and create your model deployment.<br><br>
+                                    <img style="border:2px solid black;" src="assets/img/deploy_d1.png" alt="pic" width="500" height="300" >
+                                    <img style="border:2px solid black;" src="assets/img/deploy_d2.png" alt="pic" width="500" height="300" > <br> <br>
+                                    <img style="border:2px solid black;" src="assets/img/deploy_d3.png" alt="pic" width="500" height="300" >
+                                    <img style="border:2px solid black;" src="assets/img/deploy_d4.png" alt="pic" width="500" height="300" > <br> 
+                                    <br><img style="border:2px solid black;" src="assets/img/deploy_d5.png" alt="pic" width="600" height="300" class="center"><br><br>
+
+                                    e. After that, your model should show up as an available deployment. You can click into your model deployment. On the left pane there is a button for “Invoking your model”. 
+                                    Use this button to invoke your model as https endpoint or in the OCI CLI.<br><br>
+                                    <img style="border:2px solid black;" src="assets/img/deploy_e1.png" alt="pic" width="500" height="300" >
+                                    <img style="border:2px solid black;" src="assets/img/deploy_e2.png" alt="pic" width="500" height="300" > <br> 
+                                    <br><img style="border:2px solid black;" src="assets/img/deploy_e3.png" alt="pic" width="600" height="300" class="center"><br><br>
+
+
+
+
     
                                 </p>
                 </div>
