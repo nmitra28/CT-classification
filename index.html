@@ -28,7 +28,8 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Introduction">Introduction</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#SettingUp">Setting Up</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#CondaEnvironments">Conda Environments</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#UseCases">Use Cases</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#FraudUseCases">Fraud Detection<br> Use Case</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#MedicalUseCases">Medical Image Analysis Use Case</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#DeployingMLModel">Deploying ML Model</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Authors">Authors</a></li>
                 </ul>
@@ -45,7 +46,6 @@
                     </h1>
                     <div class="subheading mb-5">
                         with Use Cases
-                        <a href="mailto:khan993@umd.edu">khan993@umd.edu</a>
                     </div>
                     <p class="lead mb-5">OCI’s data science cloud platform is built for teams allowing them to rapidly build, train, deploy, and manage machine learning models.</br>
                         In this tutorial, we will walk you through the procedure of building and deploying your Machine Learning model. 
@@ -107,7 +107,7 @@
                                 b. Use the top-left menu to select the "Analytics & AI > Data Science" option or search up “Data Science” <br>
                                 c. Select the compartment of interest and click the “Create Project” sign. <br>
                                 d. Fill in the name, details and/or tag the project, click Create. Now you have made your project.<br>
-                                <img style="border:2px solid black;" src="assets/img/Create_Project.png" alt="Create a Project ss" width="600" height="300" class="center"><br><br>
+                                <img style="border:2px solid black;" src="assets/img/Create_Project.png" alt="pic" width="600" height="300" class="center"><br><br>
                              
 
 
@@ -117,11 +117,11 @@
                                 a. Inside the project, you can make multiple notebook sessions with user-specified names, compute instances and block storage space. 
                                     Here, you would need the <b>VCN and subnet</b> you wish to create your session in. If you used the VCN Wizard earlier, your private 
                                     subnet has been created for you to use. <br>
-                                    <img style="border:2px solid black;" src="assets/img/create_nbsession.png" alt="Create a Project ss" width="600" height="300" class="center" ><br><br>
+                                    <img style="border:2px solid black;" src="assets/img/create_nbsession.png" alt="pic" width="600" height="300" class="center" ><br><br>
 
                                 b. Wait for your notebook session to create. select the "{notebook session} > open" option.<br>
                                 Now you have successfully created a notebook session.
-                                <img style="border:2px solid black;" src="assets/img/notebook_created.png" alt="Create a Project ss" width="600" height="300" class="center"><br><br>
+                                <img style="border:2px solid black;" src="assets/img/notebook_created.png" alt="pic" width="600" height="300" class="center"><br><br>
                             </p>
                         </div>
                         <div class="flex-shrink-0">
@@ -138,7 +138,7 @@
                     <h2 class="mb-5">Conda Environments and Environment Explorer</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Choose the right Environment</h3>
+                            <h3 class="mb-0">Choose the Environment</h3>
                             <div class="subheading mb-3">Environment Explorer and Adding environment using Terminal</div>
                             <p>The Data Science service offers a series of prebuilt conda environments, and you can access them in 
                                 the JupyterLab Launcher tab by clicking Environment Explorer to open in a new tab. It allows you to:
@@ -152,7 +152,19 @@
                                 The environments are focused on providing specific tools and a framework (for example, PySpark) to do 
                                 machine learning work (for example, General Machine Learning for GPUs). Or providing a comprehensive environment to 
                                 solve business use cases.
-                                For example, for our Fraud Detection use case we used <b>General Machine Learning for CPUs</b>.
+                                For example, for our Fraud Detection use case we used <b>General Machine Learning for CPUs</b>. <br><br>
+                                <img style="border:2px solid black;" src="assets/img/Env_explorer.png"  width="600" height="300" class="center"><br><br>
+
+                                <b>Add the Environment</b><br>
+                                a. Choose the environment you would like to use. There are descriptions given as well as the list of packages in it. <br>
+                                b. Copy the content from under the install option and run it on the terminal. <br><br>
+
+                                <img style="border:2px solid black;" src="assets/img/Add_env.png" alt="pic" width="500" height="300" >
+                                <img style="border:2px solid black;" src="assets/img/terminal_env.png" alt="pic" width="500" height="300" > <br> <br>
+                                <br>
+                                c. Once installed you should be able to see the environment on the Launcher page. <br>
+                                <img style="border:2px solid black;" src="assets/img/new_env_show.png" alt="pic" width="500" height="300" class = "center" >
+
                                 </p>
                         </div>
                     </div>
@@ -160,7 +172,15 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Notebook Examples</h3>
                             <div class="subheading mb-3">Example Notebooks provided through Environment Explorer</div>
-                            <p>---------Add Content ---------</p>
+                            <p>To further help you in your journey with OCI Datascience Platform, numerous example notebooks are available to you. Here is how you can access them : <br> <br>
+                                a. Every environment you install comes with a list of example of Notebooks. You need to have installed the environment to access them. <br>
+                                b. Once an environment is installed, click on "Notebook Examples" on the Launcher Page.<br>
+                                c. Click on the example you want to and learn, play around with it or use the code. <br>
+                                <br><br>
+                                <b>Example: General Machine Language for CPUs</b><br>
+                                We used General Machine Language for CPUs for one of our use cases. The following example notebooks are avaiable with the mentioned environment : <br>
+                                <br><img style="border:2px solid black;" src="assets/img/example_nb.png" alt="pic" width="600" height="300" class = "center" >
+                            </p>
                         </div>
                     </div>
                     
@@ -168,52 +188,105 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Use Cases-->
-            <section class="tutorial-section" id="UseCases">
+            <!-- Fraud Detection Use Case -->
+            <section class="tutorial-section" id="FraudUseCases">
                 <div class="tutorial-section-content">
-                    <h2 class="mb-5">Use Cases</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-figma"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-aws"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
+                    <h2 class="mb-5">FRAUD DETECTION USE CASE</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Description</h3>
+                            <div class="subheading mb-3">(Data Set and Analysis)</div>
+                            <p> 
+                                It is important that credit card companies are able to recognize fraudulent credit card transactions so that customers are not charged for items that they did not purchase. We got this dataset from
+                                <b><a href="https://www.kaggle.com/mlg-ulb/creditcardfraud" target="_blank">kaggle.com</a></b>
+                                The dataset contains transactions made by credit cards in September 2013 by European cardholders. 
+                                This dataset presents transactions that occurred in two days, where we have 492 frauds out of 284,807 transactions. 
+                                The dataset is highly unbalanced, the positive class (frauds) account for 0.172% of all transactions.
+                                It contains only numerical input variables which are the result of a PCA transformation.
+                                <br>
+                                <br>
+                                
+                                In this use case we will accomplish the following tasks:
+                                <br>
+                                <ul>
+                                    <li>Loading data to Object Storage <b>(shown below)</b></li>
+                                    <li>Pulling data from object storage using ADS <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Preprocessing data <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Using AutoML to generate and train ML models <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Testing ML model <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Saving ML model to model catalog <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Deploying ML model as a CLI, REST API on OCI <b>(shown below)</b></li>
+                                </ul>
+                                <br>
+
+                                <b>1. Loading Data to Object Storage</b> <br>
+                                The dataset we use in this project is a csv file. Use the following steps to create an object storage bucket under Oracle Cloud Infrastructure (OCI). <br>
+                                <br>
+                                a. Log into the Oracle Cloud.<br>
+                                b. Use the top-left menu to select the "Object Storage > Storage > Buckets" option or search up “object storage” and select “buckets.” <br>
+                                c. Select the compartment of interest and click the "Create Bucket" button on the object storage dashboard. <br>
+                                <br><img style="border:2px solid black;" src="assets/img/create_bucket.png" alt="pic" width="600" height="300" class="center"><br><br>
+
+                                d. Enter the name of the bucket, storage tier and key management, then click the "Create" button.<br>
+                                <br><img style="border:2px solid black;" src="assets/img/create_bucket_2.png" alt="pic" width="600" height="300" class="center"><br><br>
+
+                                e. Click on the bucket you just created. You will see bucket information such as the compartment, namespace, ocid etc. <br>
+                                f. Click on the “upload” and put your data from local storage to object storage. You can choose to enter a prefix for convenience. 
+                                Press upload in the bottom left corner. <br>
+                                <br><img style="border:2px solid black;" src="assets/img/upload_bucket.png" alt="pic" width="600" height="300" class="center"><br><br>
+
+                                g. You will now be able to see the uploaded data in your bucket. The object detail option found on the right of the listing provides an overview 
+                                of the data and a read-only example of the data.<br>
+                                <br><img style="border:2px solid black;" src="assets/img/object_desc.png" alt="pic" width="600" height="300" class="center"><br><br>
+                              
+                                <b>Learn more about Object Storage, <a href="https://docs.oracle.com/en-us/iaas/Content/Object/Concepts/objectstorageoverview.htm" target="_blank">here</a>!</b>
+
+                                <br>
+                                <br>
+                                <h2 ><a href="assets/html/Fraud Detection.html" target="_blank" style="color:rgb(255, 0, 0)">Fraud Analysis Notebook</a></h2>
+                            </p>
+                        </div>
+                    
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Medical Image Analysis Use Case-->
+            <section class="tutorial-section" id="MedicalUseCases">
+                <div class="tutorial-section-content">
+                    <h2 class="mb-5">Medical Image Analysis Use Case</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Prerequisite Setup</h3>
+                            <div class="subheading mb-3">(Compartment and VCN)</div>
+                            <p> ----Add Content ----
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Start w/ Data Science Platform</h3>
+                            <div class="subheading mb-3">(Create Project and Notebook session)</div>
+                            <p> -----Add content ----
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
             <hr class="m-0" />
             <!-- Deployement-->
             <section class="tutorial-section" id="DeployingMLModel">
                 <div class="tutorial-section-content">
-                    <h2 class="mb-5">Personal Projects</h2>
-                    <h3 class="mb-0">Crushly</h3>
-                    <h3 class="mb-0">Swipe&Invest</h3>
-                    <h3 class="mb-0">Cache Simulator</h3>
-                    <h3 class="mb-0">Trading Bot</h3>
-                    <h3 class="mb-0">Duty Scheduler</h3>
+                        <h2 class="mb-5">Deploying your Model</h2>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                            <div class="flex-grow-1">
+                                <p> After preparing and saving your model artifacts in the model catalog, you should be able to deploy it in the OCI Console. Below we have shown the steps to deploy your saved model (see use case notebook to see how) as a HTTP endpoint or using OCI CLI.<br>
+    
+                                </p>
                 </div>
+            </div>
+        </div>
             </section>
             <hr class="m-0" />
             <!-- Authors-->
