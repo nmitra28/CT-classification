@@ -31,7 +31,7 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#FraudUseCases">Fraud Detection<br> Use Case</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#MedicalUseCases">Medical Image Analysis Use Case</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#DeployingMLModel">Deploying ML Model</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Authors">Authors</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Resources">Resources</a></li>
                 </ul>
             </div>
         </nav>
@@ -124,9 +124,9 @@
                                 <img style="border:2px solid black;" src="assets/img/notebook_created.png" alt="pic" width="600" height="300" class="center"><br><br>
                             </p>
                         </div>
-                        <div class="flex-shrink-0">
+                        <!-- <div class="flex-shrink-0">
                             <span class="text-primary">Add pictures</span>
-                        </div>
+                        </div> -->
                     </div>
                     
                 </div>
@@ -210,11 +210,11 @@
                                 <br>
                                 <ul>
                                     <li>Loading data to Object Storage <b>(shown below)</b></li>
-                                    <li>Pulling data from object storage using ADS <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
-                                    <li>Preprocessing data <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
-                                    <li>Using AutoML to generate and train ML models <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
-                                    <li>Testing ML model <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
-                                    <li>Saving ML model to model catalog <b><a href="assets/html/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Pulling data from object storage using ADS <b><a href="Use_cases/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Preprocessing data <b><a href="Use_cases/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Using AutoML to generate and train ML models <b><a href="Use_cases/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Testing ML model <b><a href="Use_cases/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
+                                    <li>Saving ML model to model catalog <b><a href="Use_cases/Fraud Detection.html" target="_blank">(notebook)</a></b></li>
                                     <li>Deploying ML model as a CLI, REST API on OCI <b>(shown below)</b></li>
                                 </ul>
                                 <br>
@@ -243,7 +243,7 @@
 
                                 <br>
                                 <br>
-                                <h2 ><a href="assets/html/Fraud Detection.html" target="_blank" style="color:rgb(255, 0, 0)">Fraud Analysis Notebook</a></h2>
+                                <h2 ><a href="Use_cases/Fraud Detection.html" target="_blank" style="color:rgb(255, 0, 0)">Fraud Analysis Notebook</a></h2>
                             </p>
                         </div>
                     
@@ -256,20 +256,26 @@
                     <h2 class="mb-5">Medical Image Analysis Use Case</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Prerequisite Setup</h3>
-                            <div class="subheading mb-3">(Compartment and VCN)</div>
-                            <p> ----Add Content ----
+                            <h3 class="mb-0">Description</h3>
+                            <div class="subheading mb-3">(Data Set and Analysis)</div>
+                            <p> In this project we attempted to predict the presence of viral pneumonia in computer tomography (CT) scans. Our data was a subset of the
+                                 <a href="https://www.medrxiv.org/content/10.1101/2020.05.20.20100362v1" target="_blank" >MosMedData: Chest CT Scans with COVID-19 Related Findings Data</a>.
+                                 The subset consists of 200 CT scans with half of it normal and half of it with 50-75% lungs scarring. In the notebook you will see the following:
+
+                                 <ul>
+                                    <li>Loading the Data</li>
+                                    <li>Processing the Data (normalizing, resizing, etc)</li>
+                                    <li>Train-Test Split</li>
+                                    <li>Building a 3D CNN Model using Keras</li>
+                                    <li>Testing the Model</li>
+                                    <li>Creating the Model Artifact</li>
+                                    <li>Saving the model in OCI Model Catalog</li>
+                                </ul>
+
+                                <h2 ><a href="Use_cases/CT-project-documented.html" target="_blank" style="color:rgb(255, 0, 0)">Medical Image Prediction Notebook</a></h2> 
                             </p>
                         </div>
 
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Start w/ Data Science Platform</h3>
-                            <div class="subheading mb-3">(Create Project and Notebook session)</div>
-                            <p> -----Add content ----
-                            </p>
-                        </div>
                     </div>
                     
                 </div>
@@ -317,9 +323,9 @@
             </section>
             <hr class="m-0" />
             <!-- Authors-->
-            <section class="tutorial-section" id="Authors">
+            <section class="tutorial-section" id="Resources">
                 <div class="tutorial-section-content">
-                    <h2 class="mb-5">Authors</h2>
+                    <h2 class="mb-5">Resources</h2>
                     
                 </div>
             </section>
