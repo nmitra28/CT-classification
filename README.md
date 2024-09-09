@@ -15,7 +15,7 @@ Creating the Model Artifact
 Saving the model in OCI Model Catalog
 
 
-## https://nmitra28.github.io/Use_cases/CT-project-documented.html
+## https://nmitra28.github.io/Neural_Network_Projects/Use_cases/CT-project-documented.html
 
 ### Fraudulent credit card
 
@@ -31,4 +31,4 @@ Testing ML model (notebook)
 Saving ML model to model catalog 
 Deploying ML model as a CLI, REST API on OCI
 
-## https://nmitra28.github.io/Use_cases/Fraud%20Detection.html
+## https://nmitra28.github.io/Neural_Network_Projects/Use_cases/Fraud%20Detection.html
